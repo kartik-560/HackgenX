@@ -1,7 +1,3 @@
-
-
-
-
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
@@ -22,19 +18,17 @@ import Masterclass from "./components/Masterclass/Masterclass.jsx";
 import Speaker from "./components/Speaker/Speaker.jsx";
 
 const App = () => {
-  const [loading, setLoading] = useState(true); // Initially loader will show
+  const [loading, setLoading] = useState(true); 
   const location = useLocation();
-
-  
   // Handle loader when route changes
   useEffect(() => {
     // Always start the loader when route changes
     setLoading(true);
 
-    // Force loader to stay for 2 seconds before component renders
+   
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1500); // Forcefully show the loader for 2 seconds
+    }, 1500); 
 
     return () => clearTimeout(timer);
   }, [location.pathname]);
@@ -58,7 +52,7 @@ const App = () => {
         <div
           className="fixed inset-0 flex items-center justify-center z-50"
           style={{
-            backgroundColor: "#0f223f",  // ✅ Changed background color to solid #0f223f
+            backgroundColor: "#0f223f",  
           }}
         >
           <PuffLoader color="#25d8de" size={80} />

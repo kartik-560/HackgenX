@@ -1,5 +1,5 @@
 import React from 'react';
-import { Eligibility} from '../../components/Eligibility/Eligibility';
+import { Eligibility } from '../../components/Eligibility/Eligibility';
 import PrizePool from '../../components/PrizePool/PrizePool';
 import Sponsors from '../../components/Sponsors/Sponsors';
 import Sturcture from '../../components/Structure/Sturcture';
@@ -16,21 +16,21 @@ function Home() {
     "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&h=64&fit=crop",
     "https://images.unsplash.com/photo-1614680376739-414d95ff43df?w=128&h=64&fit=crop",
     "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=128&h=64&fit=crop",
-    "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=128&h=64&fit=crop", 
+    "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=128&h=64&fit=crop",
   ];
 
-  
-const Loader = () => {
-  return (
-    <Loader
-      type="Puff"
-      color="#0f223f"
-      height={100}
-      width={100}
-      timeout={3000} //3 secs
-    />
-  );
-};
+
+  const Loader = () => {
+    return (
+      <Loader
+        type="Puff"
+        color="#0f223f"
+        height={100}
+        width={100}
+        timeout={3000} //3 secs
+      />
+    );
+  };
 
   const timeline = [
     {
@@ -65,24 +65,24 @@ const Loader = () => {
     }
   ];
 
-    return ( 
-        
-      <div className="min-h-screen bg-gradient-to-b from-slate-900 to-slate-800">
+  return (
 
-  {/* <p> Inside Home Page 🏠</p> */}
+    <div className="min-h-screen bg-gradient-to-b from-slate-900 to-slate-800">
 
-<Hero/>
-<Sponsors/>
-<Whyparticipate/>
-<Sturcture/>
-<Eligibility />
-<Timeline/>
-<Speaker/>
-<PrizePool/>
+      {/* <p> Inside Home Page 🏠</p> */}
 
-</div>        
-        
- );
+      <Hero />
+      <Sponsors />
+      <Whyparticipate />
+      <Sturcture />
+      <Eligibility />
+      <Timeline />
+      <Speaker />
+      <PrizePool />
+
+    </div>
+
+  );
 
 
 }
